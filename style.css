@@ -1,23 +1,12 @@
-/* html, body {
-    margin: 0px;
-    padding: 0px;
-}
 
 html {
     height: 100%;
 }
 
 body {
-    min-height: 100%;
-} */
-
-html {
-    min-height: 100%;
-}
-
-body {
     background: grey;
     margin: 0;
+    min-height: 100%;
 }
 
 #header-top {
@@ -72,12 +61,12 @@ main {
     font-family: "Parisienne";
     font-size: x-large;
     margin-top:30px;
-    /* height: 85%; */
+    height: 100%;
 }
 
 
 #main-content {
-    height: 90%;
+    height: 78vh;
 }
 
 #main-content > p {
@@ -113,8 +102,10 @@ footer {
 }
 
 /* Images in Portfolio Page*/
+
 #portfolio-content {
     display: flex;
+    height: 75vh;
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -207,6 +198,12 @@ input::placeholder{
 
 /* Responsive page details*/
 
+@media screen and (max-width: 1566px){
+    #portfolio-content {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     #main-content {
         overflow: scroll;
@@ -219,6 +216,10 @@ input::placeholder{
     h2{
         text-align: center;
         background: lightcyan;
+    }
+
+    #main-content {
+        height: 100%;
     }
 }
 
